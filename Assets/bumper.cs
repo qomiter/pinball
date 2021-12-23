@@ -13,6 +13,7 @@ public class bumper : MonoBehaviour
            
             circle.transform.localScale += new Vector3(0.2f, 0.2f, 0f);
             transform.localScale += new Vector3(0.2f, 0.2f, 0f);
+            scoretracker.gameScore += 10;
             StartCoroutine(shrink());
         }
         IEnumerator shrink()

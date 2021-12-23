@@ -18,6 +18,7 @@ public class GreenTrigger : MonoBehaviour
         if(GetComponent<SpriteRenderer>().enabled == true)
         {
             GetComponent<SpriteRenderer>().enabled = false;
+            scoretracker.gameScore += 10;
             StartCoroutine(liteBackUp());
         }
        

@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 72828463}
   - component: {fileID: 72828466}
   - component: {fileID: 72828465}
+  - component: {fileID: 72828467}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -376,6 +377,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &72828467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72828462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8cb596685eb2a4c881080573f02bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &92779164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8219,6 +8232,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2548433681312599869, guid: 9cbbbfaeb42e95d4b99eee7602bab449, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3557947532322528324, guid: 9cbbbfaeb42e95d4b99eee7602bab449, type: 3}
       propertyPath: m_Name
       value: Capsule (1)
@@ -14882,13 +14899,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136466528}
-  m_LocalRotation: {x: 0, y: 0, z: 0.74261904, w: 0.6697141}
-  m_LocalPosition: {x: 10.47, y: 24.47, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7747237, w: 0.6322999}
+  m_LocalPosition: {x: 10.28, y: 24.47, z: 0}
   m_LocalScale: {x: 3.33, y: 0.58, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 95.91}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 101.56}
 --- !u!1001 &1811729488675405561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15007,6 +15024,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548433681312599869, guid: 9cbbbfaeb42e95d4b99eee7602bab449, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548433681312599869, guid: 9cbbbfaeb42e95d4b99eee7602bab449, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3557947532322528324, guid: 9cbbbfaeb42e95d4b99eee7602bab449, type: 3}

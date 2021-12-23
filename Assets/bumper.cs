@@ -11,16 +11,16 @@ public class bumper : MonoBehaviour
         if (collision != null)
         {
            
-            circle.transform.localScale += new Vector3(0.2f, 0.2f, 0f);
-            transform.localScale += new Vector3(0.2f, 0.2f, 0f);
+            circle.transform.localScale += new Vector3(0.1f, 0.1f, 0f);
+            transform.localScale += new Vector3(0.1f, 0.1f, 0f);
             scoretracker.gameScore += 10;
             StartCoroutine(shrink());
         }
         IEnumerator shrink()
         {
             yield return new WaitForSeconds(0.1f);
-            circle.transform.localScale = new Vector3(2f, 2f, 0f);
-            transform.localScale = new Vector3(2f,2f,0);
+            circle.transform.localScale = new Vector3(0.5f, 0.5f, 0f);
+            transform.localScale = new Vector3(0.5f, 0.5f, 0);
         }
         
             

@@ -11,8 +11,8 @@ public class bumper : MonoBehaviour
         if (collision != null)
         {
            
-            circle.transform.localScale += new Vector3(0.1f, 0.1f, 0f);
-            transform.localScale += new Vector3(0.1f, 0.1f, 0f);
+            circle.transform.localScale += new Vector3(0.05f, 0.05f, 0f);
+            transform.localScale += new Vector3(0.05f, 0.05f, 0f);
             scoretracker.gameScore += 10;
             StartCoroutine(shrink());
         }

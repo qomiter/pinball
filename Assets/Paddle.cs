@@ -32,13 +32,11 @@ public class Paddle : MonoBehaviour
         {
             motor2D.motorSpeed = -speed;
             hinge.motor = motor2D;
-            Debug.Log("Getting here!");
         }
         else
         {
             motor2D.motorSpeed = speed;
             hinge.motor = motor2D;
-            Debug.Log("else");
         }
         
         

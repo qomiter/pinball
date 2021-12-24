@@ -17,7 +17,9 @@ public class GreenTrigger : MonoBehaviour
     {
         if(GetComponent<SpriteRenderer>().enabled == true)
         {
+            AudioSource squareHit = GetComponent<AudioSource>();
             GetComponent<SpriteRenderer>().enabled = false;
+            squareHit.Play();
             scoretracker.gameScore += 10;
             StartCoroutine(liteBackUp());
         }

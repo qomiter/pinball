@@ -40,7 +40,7 @@ public class Submit : MonoBehaviour
 
         WWWForm form = new WWWForm();
         form.AddField("username", username.text);
-        form.AddField("score", scoretracker.highScore);
+        form.AddField("score", scoretracker.gameScore);
 
         WWW www = new WWW("https://qomiter.com/getscores.php", form);
         yield return www;

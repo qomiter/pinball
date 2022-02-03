@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class Submit : MonoBehaviour
 {
@@ -42,16 +43,15 @@ public class Submit : MonoBehaviour
         form.AddField("username", username.text);
         form.AddField("score", scoretracker.gameScore);
 
-        WWW www = new WWW("https://qomiter.com/getscores.php", form);
-        yield return www;
-        if(www.text == "0")
+        UnityWebRequest www = UnityWebRequest.Post("https://qomiter.com/getscores.php", form);
+        yield return www.SendWebRequest();
+        if(www.result != UnityWebRequest.Result.Success)
         {
-            Debug.Log("Success!");
-
+            Debug.Log(www.error);
         }
         else
         {
-            Debug.Log("Submit Failed #: " + www.text);
+            Debug.Log("Form upload complete!");
         }
     }
 

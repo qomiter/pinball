@@ -9,6 +9,9 @@ public class trigger : MonoBehaviour
     {
         PlayerPrefs.SetInt("highscore", scoretracker.highScore);
         PlayerPrefs.Save();
-        SceneManager.LoadScene(0);
+        Submit.instance.EnableCanvas();
+
+
+        // 
     }
 }

@@ -11,7 +11,5 @@ public class trigger : MonoBehaviour
         PlayerPrefs.Save();
         Submit.instance.EnableCanvas();
 
-
-        // 
     }
 }
